@@ -1,0 +1,196 @@
+/* ----- Loader ----- */
+body {
+  overflow: hidden;
+}
+#loader {
+  background: #110f0f;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+
+/* ----- All ----- */
+h1,p{
+  color: #110f0f;
+}
+
+/* ----- Header ----- */
+header{
+  background-image: url('/images/header.jpg');
+  background-position:60%;
+  background-size: cover;
+  height: 100vh;
+  height: 100svh;
+}
+
+
+/* --- @lou.street/ ---- */
+header .where{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 80px;
+  z-index: 99;
+}
+header .where nav{
+  width: 1010px;
+  padding: 0 10px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* --- About me --- */
+header .about {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  cursor: pointer;
+}
+header .about span:first-child {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  transition: transform 0.5s;
+}
+header .about:hover span:first-child{
+  transform: scale(1.1);
+}
+header .about span:last-child {
+  display: block;
+  font-size: 1.5em;
+}
+
+
+/* --- Contenue ---*/
+main{
+  background-color: #110f0f;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 5vh 10vw;
+}
+article img {
+  width: 30%;
+  margin: 0 20px;
+}
+article h1{
+  font-size: 3em;
+  width: fit-content;
+  margin-bottom: 20px;
+  color: #fff;
+}
+article p {
+  padding-left: 30px;
+  padding-bottom: 2vh;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1840px) {
+  article {
+    padding: 6vw;
+  }
+  article h1 {
+    font-size: 3.5rem;
+  }
+  article p {
+    font-size: 1.75rem;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  article {
+    flex-direction: column;
+    padding: 6vw;
+  }
+  .nikon{
+    flex-direction: column-reverse;
+  }
+  article img {
+    width: 75%;
+    margin-right: 0;
+    margin: 0;
+  }
+  article h1 {
+    font-size: 3.5rem;
+  }
+  article p {
+    font-size: 1.75rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  article {
+    padding: 4vw;
+  }
+  article img {
+    width: 75%;
+    margin: 0;
+  }
+  article h1 {
+    font-size: 3rem;
+  }
+  article p {
+    font-size: 1.5rem;
+  }
+
+  header .where nav{
+    width: 750px;
+  }
+
+  header .about span:first-child,
+  header .about span:last-child{
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  article {
+    padding: 2vw;
+  }
+  article img {
+    width: 75%;
+    margin: 0;
+  }
+  article h1 {
+    font-size: 2.5rem;
+  }
+  article p {
+    font-size: 1.25rem;
+  }
+
+  header .about span:first-child,
+  header .about span:last-child{
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  article h1 {
+    font-size: 2rem;
+  }
+}
+
+
+
+/* --- @lou.street/ --- */
+@media only screen and (max-width: 768px) {
+  header .where nav{
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  header .where nav{
+    font-size: 0.8rem;
+  }
+}

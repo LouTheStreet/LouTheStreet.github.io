@@ -1,0 +1,48 @@
+/* ----- Loader ----- */
+body {
+  overflow: hidden;
+}
+#loader {
+  background: #110f0f;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+
+/* ----- All ----- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Lexend Deca', sans-serif;
+  color: #fff;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* Change the color of the scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  header .where span{
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  header .where span{
+    font-size: 0.8rem;
+  }
+}
